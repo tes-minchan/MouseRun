@@ -3,9 +3,8 @@ let userMouseRunSum = 0;
 
 chrome.storage.local.get(['userMouseRun'], function(result) {
 
-  console.log("Background Start, data : " + result.userMouseRun);
-
   if(result.userMouseRun) {
+    console.log("set ")
     userMouseRunSum = result.userMouseRun;
   }
 

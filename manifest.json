@@ -24,6 +24,7 @@
         "http://*/*",
         "*://*/*"
       ],
+      "css": ["css/content.css"],
       "js": [
         "js/jquery.js",
         "js/script.js"

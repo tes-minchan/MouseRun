@@ -5,8 +5,7 @@ let prevY = 0;
 let timeout = null;
 
 $(document).ready(function(){
-
-  $("<div class=\"follower\"></div>").appendTo("body");
+  $("<div class='follower' />").appendTo("body");
   console.log('insert');
 });
 
@@ -27,10 +26,10 @@ $(document).mousemove(function(event) {
 
   prevX = event.pageX;
   prevY = event.pageY;
-
+  
   $('.follower').css({
-    left: event.clientX,
-    top: event.clientY,
+    left: event.clientX + 10,
+    top: event.clientY - 10,
   });
 
 });
